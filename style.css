@@ -1,0 +1,109 @@
+@import url("reset.css");
+
+/* basic styles */
+
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: .02em;
+	font-size: 11px;
+    background-color: #333333;
+	color: #4B4B4B;
+	margin: 0;
+	padding: 0;
+
+}
+
+body.navbar {
+    color: #ccc;
+    background-color: black; 
+}
+body.panel {
+    margin: 2em;
+    padding: 1em;
+}
+
+a {
+    color: #cccc00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+
+
+.NavBarTitle {
+    font-size: 1.5em;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.NavBarItem {
+    text-align: left;
+    padding-left: 3em;
+    color: #DEE7C6;
+    font-size: 1em;
+    text-decoration: none;
+}
+.NavBarSearchItem {
+    background-color: black;
+    color: #DEE7C6;
+    font-size: 8pt;
+}
+INPUT.NavBarSearchItem {
+    background-color: white;
+    color: black;
+    font-size: 8pt;
+}
+.arrow {
+    float: right;
+    padding-right: 1em;
+}
+
+/* extant styles, kept for reference */
+/* 
+TABLE.NavBarTitle {
+    font-family: verdana,arial,serif;
+    background-color: black;
+    border: thin solid white; 
+    padding: 1;
+}
+TD.NavBarTitle { 
+    font-family: verdana,arial,serif;
+    background-color: black;
+    color: #DEE7C6;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+.NavBarItem {
+    font-family: verdana,arial,serif;
+    background-color: black;
+    color: #DEE7C6;
+    font-size: 8pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+.NavBarSearchItem {
+    font-family: verdana,arial,serif;
+    background-color: black;
+    color: #DEE7C6;
+    font-size: 8pt;
+}
+INPUT.NavBarSearchItem {
+    font-family: verdana,arial,serif;
+    background-color: white;
+    color: black;
+    font-size: 8pt;
+}
+BODY.navbar {
+    font-family: verdana,arial,serif;
+    background-color: white;
+    color: black;
+    background-color: black; 
+}
+*/

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="generator" content="HTML Tidy, see www.w3.org">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    <title></title>
+    <script type="text/javascript" charset="utf-8" src="jquery.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="jquery-css-transform.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="jquery-animate-css-rotate-scale.js"> </script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $(".NavBarTitle").append("<div class='arrow'> &#x25B8;</div>");
+            $(".navContent").hide();  
+            $(".NavBarTitle").click(function(event){
+                $(this).next(".navContent").slideToggle();
+                if( $(this).children('.arrow').rotate() == "90deg" )
+                    {
+                        $(this).children('.arrow').animate({rotate : "0deg", paddingTop : "0px"}, 100);
+
+                    } else {
+                        $(this).children('.arrow').animate({rotate : "90deg", paddingTop : "2em"}, 100);
+                    }
+                });
+            });
+    </script>
+</head>
+<body class="navbar">
+    <!-- I am going to assume for the moment we are going to do something
+    sane here, i.e. burn these tables as sacrifices to the dark gods and build
+    a new structure of divs as nature intended -->
+
+    <div class="NavBarTitle">General</div>
+<div class="navContent" id="navGeneral">
+    <div class="NavBarItem"><a href="panel.html">Home</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/customer.php">Customer Info</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/cc.php">CC Billing Info</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/password.php">Password</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/faq.php">FAQ</a></div>
+</div>
+
+<div class="NavBarTitle">VM</div>
+<div class="navContent" id="navVM">
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?all=1">All</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/cloud/newvm.php">Create</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?delete=1">Delete</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?reboot=1">Reboot</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?ram=1">RAM</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?tp=1">TelePort</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?disk=1">Disk</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?mac=1">MAC</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/image.php">Images</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?ip=1">IP</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?rebuild=1">Rebuild</a></div>
+</div>
+
+<div class="NavBarTitle">Reporting</div>
+<div class="navContent" id="navReporting">
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?key=1">KEYS</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?xfer=1">Xfer</a></div>
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/panel.php?io=1">I/O</a></div>
+</div>
+
+<div class="NavBarTitle">Logout</div>
+<div class="navContent" id="navUser">
+    <div class="NavBarItem"><a href="https://www.appliedops.net/cloud/logout.php">Logout</a></div>
+</div>
+    
+
+</body>
+</html>
