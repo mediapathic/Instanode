@@ -1,0 +1,36 @@
+
+<html>
+<head>
+<title>Instanode</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+    <div id="logincontent">
+        <div id=logo><img src="logo1.png"></div>
+        <br>
+        <div id=tagline><p>FreeBSD powered Cloud</p></div>
+        <br>
+    </div>
+    <div id=auth>
+        <form action=login.php method=post>
+            <fieldset>
+            <p>
+            <label for="loginid">Login ID</label>
+            <input type=text name=loginid>
+            </p>
+            <p>
+            <label for="password">Password</label>
+            <input type=password name=password>
+            <input type=hidden name=cookie value=570d7e8bfc650a04839aad6a3b1e2967e0945d4d>
+            </p>
+            <p>
+            <input type=submit value='Login'> 
+            <div id=signup>Or <a href=signup.php>Signup</a></div>
+            </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
+

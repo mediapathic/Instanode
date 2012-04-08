@@ -64,6 +64,94 @@ INPUT.NavBarSearchItem {
     padding-right: 1em;
 }
 
+
+/* login page */
+
+#logincontent {
+    display: block;
+    width: 264px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tagline {
+    font-size: 2em;
+    color: #e65f1c;
+}
+
+#signup {
+    float: right;
+}
+
+#auth {
+    margin: 0 auto;
+    color: #fff;
+    background: #2d2d2d;
+    /*background: -webkit-gradient(*/
+        /*linear,*/
+        /*left bottom,*/
+        /*left top,*/
+        /*color-stop(0, rgb(60,60,60)),*/
+        /*color-stop(0.74, rgb(43,43,43)),*/
+        /*color-stop(1, rgb(60,60,60))*/
+        /*);*/
+     /*background: -moz-linear-gradient(*/
+        /*center bottom,*/
+        /*rgb(60,60,60) 0%,*/
+        /*rgb(43,43,43) 74%,*/
+        /*rgb(60,60,60) 100%*/
+        /*);*/
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+     padding: 2em;
+     width: 200px;
+     }
+
+ #auth a {
+      color: #8c910b;
+      text-shadow: 0px -1px 0px #000;
+      }
+
+/*#auth fieldset {*/
+      /*padding: 0px;*/
+      /*}*/
+
+#auth label {
+    float: left;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#auth input:not([type=submit]){
+    float: right;
+}
+
+#auth input[type=submit] {
+    display: block;
+    background: #384313;
+    border: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: block;
+    /*font: 18px Georgia, "Times New Roman", Times, serif;*/
+    letter-spacing: 1px;
+    /*margin: auto;*/
+    padding: 7px 5px;
+    text-shadow: 0 1px 1px #000000;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+
+}
+
+form input[type=submit]:hover {
+background: #1e2506;
+cursor: pointer;
+}
+
 /* extant styles, kept for reference */
 /* 
 TABLE.NavBarTitle {
