@@ -142,6 +142,11 @@ form label {
 form input:not([type=submit]){
     float: right;
 }
+
+form select, input {
+    background-color: #ccb;
+}
+
 form select:not([name=os]) {
     float: right;
 }
