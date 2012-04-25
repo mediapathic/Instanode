@@ -147,6 +147,10 @@ form select, input {
     background-color: #ccb;
 }
 
+form select:focus, input:focus{
+    border-color: black;
+}
+
 form select:not([name=os]) {
     float: right;
 }
@@ -212,15 +216,15 @@ form input.vmname{
 /* node list output */
 
 table.nodelist {
+    font-size: 9pt;
     border: 1px solid black;
-    background-color: #;
-    line-height: 1.5em;
+    background-color: #444;
     border-collapse: collapse;
 }
 
 
 .nodelist td {
-    padding: 0.5em 1.5em 0.5em 1.5em; 
+    padding: 0.3em 1.5em 0.3em 1em; 
     border: 1px solid black;
 }
 .nodelist .heads {
