@@ -1,0 +1,72 @@
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Newvm</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body class="panel">
+<p>
+<h2>Create a new VM</h3>
+</p>
+    <div class="innerform">
+            <form action=/cloud/newvm.php>
+        <fieldset>
+                <ul>
+                <li>
+                <label for="vmname">Name:</label>
+                <input class="vmname" type=text name=vmname value=CHANGEME4f9202245cac4>
+                </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+                <ul>
+                <li>
+                <label for="ram">RAM:</label>
+                <select name=ram>
+                <option name=ram value=512>512M</option><option name=ram value=1024>1024M</option><option name=ram value=2048>2048M</option><option name=ram value=4096>4096M</option></select>
+                </li>
+                <li>
+                <label for="cpus">CPUs:</label><select name=cpus>
+                <option name=cpus value=1>1</option><option name=cpus value=2>2</option><option name=cpus value=4>4</option></select>
+                </li>
+                <li>
+               <label for="disk">DISK:</label><select name=disk>
+                <option name=disk value=30>30GB</option><option name=disk value=40>40GB</option><option name=disk value=50>50GB</option><option name=disk value=75>75GB</option><option name=disk value=100>100GB</option><option name=disk value=200>200GB</option><option name=disk value=250>250GB</option><option name=disk value=300>300GB</option><option name=disk value=400>400GB</option><option name=disk value=500>500GB</option></select>
+                </li>
+                <li>
+            </ul>
+                </fieldset>
+                <fieldset>
+                <ul class="os">
+                <select name=os>
+                <option name=os value=0>Select OS</option>
+                <option name=os value=0>FreeBSD</option>
+                <option name=os value=1>CentOS</option>
+                <option name=os value=2>Ubuntu</option>
+                <option name=os value=3>NetBSD</option>
+                </select>OR<select name=image>
+                </li>
+                <li>
+                <option name=image value=0>Select Image</option>
+                </li>
+                </select>
+            </ul>
+                </fieldset>
+                <fieldset>
+                    <ul>
+                <li>
+                <label for="vlan">NETWORK:</label><select name=vlan>
+                <option name=vlan value=0>AO ServerCentral TestNet - 69.22.167.0/26</option>
+                </select>
+                </li>
+                <input type=hidden name=genid value=4f9202245d694>
+                <input type=hidden name=newvm value=1>
+                <input type=submit value='ADD'>
+                </ul>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

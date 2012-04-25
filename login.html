@@ -5,33 +5,31 @@
 <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-    <div id="content">
-        <p>Here is in a brief informative paragraph telling the user what they are seeing on
-        this page, and mentioning that they are <a href="userinfo.php">$USER</a>, which link
-        leads to some user / account info page. </p>
-    </div>
+
     <div id="logincontent">
         <div id=logo><img src="logo1.png"></div>
         <br>
         <div id=tagline><p>FreeBSD powered Cloud</p></div>
         <br>
     </div>
-    <div id=auth>
+    <div class=auth>
         <form action=login.php method=post>
             <fieldset>
-            <p>
+            <ul>
+            <li>
             <label for="loginid">Login ID</label>
             <input type=text name=loginid>
-            </p>
-            <p>
+            </li>
+            <li>
             <label for="password">Password</label>
             <input type=password name=password>
             <input type=hidden name=cookie value=570d7e8bfc650a04839aad6a3b1e2967e0945d4d>
-            </p>
-            <p>
+            </li>
+            <li>
             <input type=submit value='Login'> 
-            <div id=signup>Or <a href=signup.php>Signup</a></div>
-            </p>
+            <div id=signupbutton>Or <a href=signup.php>Signup</a></div>
+            </li>
+        </ul>
             </fieldset>
         </form>
     </div>
